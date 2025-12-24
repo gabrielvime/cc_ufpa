@@ -3,7 +3,6 @@
 //
 
 #pragma once
-#define DATASTRUCTURES_AVLNODE_H
 #include <memory>
 
 template <typename T>
@@ -15,9 +14,9 @@ struct AVLNode {
     std::unique_ptr<AVLNode<T>> lChild;
     std::unique_ptr<AVLNode<T>> rChild;
 
-    AVLNode() : data(T{}), height{1}, parent(nullptr) {}
+    AVLNode() : data{T{}}, height{1}, parent{nullptr} {}
 
-    AVLNode(const T& inData) : data(inData), height{1}, parent(nullptr) {}
+    AVLNode(const T& inData) : data{inData}, height{1}, parent{nullptr} {}
 
 };
 
